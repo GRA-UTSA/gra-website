@@ -755,7 +755,7 @@ common
 
 #primary {
 	float: left;
-	width: 65.5%;
+	width: 100%;
 }
 
 #secondary {
@@ -1215,9 +1215,18 @@ Header
 
 #site-navigation ul li {
 	float: left;
-	padding: 23px 30px 23px 0;
+	padding:23px 30px 23px 0px;
 	position: relative;
+	text-align: center;
 }
+/*
+	margin: 13px 0px 13px 0px;
+	padding: 10px 15px 10px 15;
+}
+#site-navigation ul li:hover {
+	background-color: orange;
+}
+*/
 
 #site-navigation ul li a {
 	font-size: 14px;
@@ -4149,4 +4158,24 @@ WooCommerce
 
 .woocommerce .woocommerce-breadcrumb span:first-of-type::before{
 	content: none;
+}
+
+/*---------------------------
+Customizattions
+---------------------------*/
+#flash-breadcrumbs {
+	padding: 10px;
+}
+
+.site-main {
+	padding: 20px;
+}
+
+/* make the content height fill the viewport */
+#content {
+	min-height: calc(100vh - 230px);
+}
+
+#page {
+	min-height: 100vh;
 }

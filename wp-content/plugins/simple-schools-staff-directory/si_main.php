@@ -1098,7 +1098,8 @@ extract(shortcode_atts(array(
 		'limit' => 25
 	), $params));	
 
-// employee search form  // 
+// employee search form  // disabled //
+/*
 echo '<form method="get" id="employeesearchform" action="'.get_permalink($id).'" >
 	<div><label class="screen-reader-text" for="s">' . __('Search for:') . '</label>
 	<input type="text" name="si_search" id="si_search" />
@@ -1120,6 +1121,7 @@ echo '<option value="'.$roledex.'">'.$rolename.'</option>';
 }
 }
 echo '</select><input type="submit" id="searchsubmit" value="'. esc_attr__('Search') .'" /></div></form><br>';
+*/
 
 //employee directory or search resulrts
 global $wpdb,$type,$page;

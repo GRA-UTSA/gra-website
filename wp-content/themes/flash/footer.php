@@ -32,10 +32,14 @@
 		<div id="bottom-footer">
 			<div class="tg-container">
 
-					<?php do_action( 'flash_copyright_area' ); ?>
+					<div class="copyright">
+						<span class="copyright-text">
+							Copyright © <?php echo(date('Y') == '2017' ? date('Y') : '2017 - '.date('Y')); ?> <a href="/">GRA UTSA</a>		
+						</span>
+					</div>
+					<?php //do_action( 'flash_copyright_area' ); ?>
 
 					<?php wp_nav_menu( array( 'theme_location' => 'footer', 'menu_class' => 'footer-menu', 'fallback_cb' => false, ) ); ?>
-
 			</div>
 		</div>
 	</footer><!-- #colophon -->
